@@ -170,3 +170,34 @@ a {
     width: 100%;
   }
 }
+
+.contendor-diseños {
+  background: #ececec;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.content-images {
+  width: 150px;
+  height: 40px;
+}
+
+.section-beneficios {
+  background: #1c1c1c;
+}
+
+.section-bene {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.contendor-card {
+  background: red;
+  width: 250px;
+  height: 250px;
+  border: 7px solid var(--border-colr);
+  margin-bottom: 1rem;
+}

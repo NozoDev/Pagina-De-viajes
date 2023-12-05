@@ -1,0 +1,13 @@
+<svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Airplanemode active">
+<g clip-path="url(#clip0_1_82)">
+<path id="Vector" d="M0 25C0 11.1929 11.1929 0 25 0H105C118.807 0 130 11.1929 130 25V105C130 118.807 118.807 130 105 130H25C11.1929 130 0 118.807 0 105V25Z" fill="#2453FB"/>
+<path id="Vector_2" d="M110 83V74L71.75 51.5V26.75C71.75 23.015 68.735 20 65 20C61.265 20 58.25 23.015 58.25 26.75V51.5L20 74V83L58.25 71.75V96.5L47 103.25V110L65 105.5L83 110V103.25L71.75 96.5V71.75L110 83Z" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_82">
+<rect width="130" height="130" rx="25" fill="white"/>
+</clipPath>
+</defs>
+</svg>
