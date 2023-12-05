@@ -1,0 +1,150 @@
+:root {
+  --color: #fd7c1d;
+  --color-blue: #2453fb;
+  --border-colr: #2453fb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #ececec;
+}
+
+.active {
+  max-width: 5rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 4rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .abrir-menu:hover,
+  .cerrar-menu:hover {
+    color: #2453fb;
+  }
+
+  .abrir-menu {
+    color: #1c1c1c;
+  }
+
+  .cerrar-menu {
+    color: #ececec;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-list li a {
+    color: white;
+  }
+}
+
+.contenedor {
+  background-color: #2453fb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.parrafo-main {
+  width: 450px;
+  color: white;
+}
+
+.title-main {
+  font-size: 55px;
+  color: white;
+  padding: 1rem;
+}
+
+.contenedor-section {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.section-img,
+.img-img1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .parrafo-main {
+    width: 250px;
+  }
+
+  .section-img,
+  .img-img1 {
+    object-fit: contain;
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
