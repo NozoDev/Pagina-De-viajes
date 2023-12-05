@@ -11,6 +11,10 @@
   font-family: "Roboto Slab", serif;
 }
 
+body {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -117,24 +121,42 @@ a {
 }
 
 .contenedor-section {
-  text-align: center;
+  text-align: left;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1.5rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .section-img,
 .img-img1 {
   display: flex;
   justify-content: flex-end;
+  width: 540px;
+  height: 580px;
+}
+
+.btn-btn {
+  background-color: var(--color);
+  width: 305px;
+  height: 88px;
+  border-radius: 50px;
+  color: #ececec;
+  font-weight: 800;
+  font-size: 25px;
+  border: 0;
 }
 
 @media screen and (max-width: 768px) {
   .contenedor {
     flex-direction: column;
+  }
+
+  .title-main {
+    font-size: 30px;
   }
 
   .parrafo-main {
@@ -144,7 +166,7 @@ a {
   .section-img,
   .img-img1 {
     object-fit: contain;
-    margin-top: 1rem;
+    height: auto;
     width: 100%;
   }
 }
